@@ -5,53 +5,83 @@ html {
 
 body {
     padding: 10px;
-    background-image: linear-gradient(#5DA4D9, #FFF);
+    background-image: linear-gradient(#0468b4, #abdaff);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
 }
 
 #emoji-container {
-    margin: 30px auto 20px;
+    /* margin: 30px auto 20px; */
+    margin: .5em auto 1.5em;
     text-align: center;
 }
 
 #emoji-container span {
     margin: 10px;
-    font-size: 60px;
+    font-size: 4em;
 }
 
-#push-btn,#unshift-btn {
+#push-btn,
+#unshift-btn {
     background-color: #80D87F;
 }
 
-#shift-btn,#pop-btn {
+#push-btn:hover,
+#unshift-btn:hover {
+    background-color: #279125;
+}
+
+#shift-btn,
+#pop-btn {
     background-color: #E23349;
+}
+
+#shift-btn:hover,
+#pop-btn:hover {
+    background-color: #b40c22;
 }
 
 h1 {
     letter-spacing: 2px;
     text-align: center;
     color: white;
+    font-size: 6em;
+    margin: -.5em 0 .25em;
 }
 
 input {
-    margin: 0 auto;
+    margin: 0 auto 1em;
     display: block;
     border: none;
-    height: 30px;
-    width: 60%;
+    height: 50px;
+    width: 90%;
+    max-width: 400px;
     background: white;
     border-radius: 6px;
     text-align: center;
+    font-size: 1.25em;
+    padding: .75em .5em;
+}
+
+input:focus {
+    outline: none;
+    border: solid 4px #0c446e;
 }
 
 button {
     font-family: Baloo;
-    letter-spacing: px;
+    letter-spacing: .05em;
+    font-size: 1.25em;
     background: darkcyan;
     color: white;
     border: none;
     padding: 4px 10px;
+    padding: .75em 1em;
     border-radius: 6px;
-    margin: 0 4px;
+    margin: 0 .5em;
+    cursor: pointer;
 }
 
 .buttons-wrapper {
@@ -59,4 +89,3 @@ button {
     justify-content: center;
     margin: 20px 0 0;
 }
-
